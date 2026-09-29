@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0A0F1D;
+    color: #F8FAFC;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body.light-theme,
+  html.light-theme body {
+    background-color: #f1f5f9;
+    color: #0f172a;
+  }
+}
+
+/* High-Contrast Light Theme Overrides */
+html.light-theme {
+  color-scheme: light;
+}
+
+html.light-theme .bg-\[\#0A0F1D\] {
+  background-color: #ffffff !important;
+}
+
+html.light-theme .bg-\[\#0D1425\] {
+  background-color: #f8fafc !important;
+}
+
+html.light-theme .bg-\[\#0A0F1D\]\/90 {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+
+html.light-theme .border-white\/10 {
+  border-color: #cbd5e1 !important;
+}
+
+html.light-theme .border-white\/20 {
+  border-color: #94a3b8 !important;
+}
+
+html.light-theme .text-white {
+  color: #0f172a !important;
+}
+
+html.light-theme .text-white\/90 {
+  color: #1e293b !important;
+}
+
+html.light-theme .text-white\/80 {
+  color: #334155 !important;
+}
+
+html.light-theme .text-white\/70 {
+  color: #334155 !important;
+}
+
+html.light-theme .text-white\/60 {
+  color: #475569 !important;
+}
+
+html.light-theme .text-white\/50 {
+  color: #475569 !important;
+}
+
+html.light-theme .text-white\/40 {
+  color: #64748b !important;
+}
+
+html.light-theme .text-white\/30 {
+  color: #64748b !important;
+}
+
+html.light-theme .text-white\/20 {
+  color: #94a3b8 !important;
+}
+
+html.light-theme .placeholder\:text-white\/20::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.light-theme .bg-white\/5 {
+  background-color: #e2e8f0 !important;
+}
+
+html.light-theme .bg-white\/10 {
+  background-color: #cbd5e1 !important;
+}
+
+html.light-theme .hover\:bg-white\/5:hover {
+  background-color: #cbd5e1 !important;
+}
+
+html.light-theme .hover\:bg-white\/10:hover {
+  background-color: #94a3b8 !important;
+}
+
+html.light-theme input,
+html.light-theme textarea,
+html.light-theme select {
+  color: #0f172a !important;
+}
+
+/* Hide scrollbars for clean UI */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card-entrance {
+  animation: cardEntrance 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+

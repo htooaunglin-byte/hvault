@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128" />
+      <stop offset="100%" stop-color="#040714" />
+    </linearGradient>
+    <linearGradient id="lockG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="shackleG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Rounded Square Base for Bookmark Visibility -->
+  <rect x="12" y="12" width="488" height="488" rx="120" fill="url(#bgG)" stroke="#38BDF8" stroke-width="20" stroke-opacity="0.8" />
+
+  <!-- Ambient Glow Behind Lock -->
+  <circle cx="256" cy="270" r="150" fill="#38BDF8" fill-opacity="0.18" />
+
+  <!-- Lock Shackle (Thick and high-contrast) -->
+  <path d="M 172 230 V 160 C 172 112 210 74 256 74 C 302 74 340 112 340 160 V 230" 
+        fill="none" 
+        stroke="url(#shackleG)" 
+        stroke-width="44" 
+        stroke-linecap="round" />
+
+  <!-- Lock Body -->
+  <rect x="120" y="210" width="272" height="216" rx="44" fill="url(#lockG)" stroke="#7DD3FC" stroke-width="8" stroke-opacity="0.6" />
+
+  <!-- Cutout Chamber for 'H' -->
+  <rect x="176" y="250" width="160" height="136" rx="20" fill="#070D1E" fill-opacity="0.95" />
+
+  <!-- Prominent "H" Emblem -->
+  <!-- Left Leg -->
+  <rect x="202" y="270" width="24" height="96" rx="12" fill="#38BDF8" />
+  <!-- Right Leg -->
+  <rect x="286" y="270" width="24" height="96" rx="12" fill="#38BDF8" />
+  <!-- Center Crossbar -->
+  <rect x="202" y="306" width="108" height="24" rx="8" fill="#38BDF8" />
+  
+  <!-- Glowing Center Keyhole Core -->
+  <circle cx="256" cy="318" r="10" fill="#FFFFFF" />
+</svg>

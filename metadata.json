@@ -1,0 +1,6 @@
+{
+  "name": "hVault",
+  "description": "Secure Zero-Knowledge Password Manager with client-side AES-GCM encryption, Website 1-Click AutoFill, and cloud synchronization",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

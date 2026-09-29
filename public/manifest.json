@@ -1,0 +1,18 @@
+{
+  "name": "hVault - Zero-Knowledge Password Manager",
+  "short_name": "hVault",
+  "description": "Zero-Knowledge client-side encrypted password manager and ATM card vault",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1D",
+  "theme_color": "#0A0F1D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
